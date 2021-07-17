@@ -232,6 +232,11 @@ const BaseExtensionTag = {
    * Represents a media compatible node.
    */
   Media: 'media',
+
+  /**
+   * Represents a node that can be given a caption
+   */
+  CaptionCompatible: 'captionCompatible',
 } as const;
 
 /**

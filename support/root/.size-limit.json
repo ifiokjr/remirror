@@ -196,6 +196,14 @@
     "gzip": true
   },
   {
+    "name": "@remirror/extension-caption",
+    "limit": "5 KB",
+    "path": "packages/remirror__extension-caption/dist/remirror-extension-caption.browser.esm.js",
+    "ignore": ["@remirror/pm", "@remirror/core"],
+    "running": false,
+    "gzip": true
+  },
+  {
     "name": "@remirror/extension-code",
     "limit": "5 KB",
     "path": "packages/remirror__extension-code/dist/remirror-extension-code.browser.esm.js",
@@ -364,7 +372,13 @@
     "name": "@remirror/extension-image",
     "limit": "20 KB",
     "path": "packages/remirror__extension-image/dist/remirror-extension-image.browser.esm.js",
-    "ignore": ["@remirror/pm", "@remirror/core", "@remirror/messages", "@remirror/theme"],
+    "ignore": [
+      "@remirror/pm",
+      "@remirror/core",
+      "@remirror/extension-caption",
+      "@remirror/messages",
+      "@remirror/theme"
+    ],
     "running": false,
     "gzip": true
   },

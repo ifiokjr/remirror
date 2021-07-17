@@ -1,4 +1,5 @@
 import {
+  AnyExtension,
   ApplySchemaAttributes,
   command,
   CommandFunction,
@@ -19,6 +20,7 @@ import {
   ProsemirrorAttributes,
   ProsemirrorNode,
 } from '@remirror/core';
+import { CaptionExtension } from '@remirror/extension-caption';
 import { PasteRule } from '@remirror/pm/paste-rules';
 import { insertPoint } from '@remirror/pm/transform';
 import { ExtensionImageTheme } from '@remirror/theme';
@@ -55,7 +57,7 @@ export interface ImageOptions {
    *
    * @default false
    */
-  enableResizing: boolean;
+  enableResizing?: boolean;
 }
 
 interface FileWithProgress {
@@ -94,6 +96,15 @@ export class ImageExtension extends NodeExtension<ImageOptions> {
   }
 
   createTags() {
+    // I don't like this at all, would very much appreciate feedback here
+    const hasCaption = this.store.extensions.find(
+      (e: AnyExtension) => e instanceof CaptionExtension,
+    );
+
+    if (hasCaption) {
+      return [ExtensionTag.BlockNode, ExtensionTag.Media, ExtensionTag.CaptionCompatible];
+    }
+
     return [ExtensionTag.InlineNode, ExtensionTag.Media];
   }
 

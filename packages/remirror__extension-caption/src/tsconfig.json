@@ -18,18 +18,6 @@
   "references": [
     {
       "path": "../../remirror__core/src"
-    },
-    {
-      "path": "../../remirror__extension-caption/src"
-    },
-    {
-      "path": "../../remirror__messages/src"
-    },
-    {
-      "path": "../../remirror__theme/src"
-    },
-    {
-      "path": "../../prosemirror-resizable-view/src"
     }
   ]
 }

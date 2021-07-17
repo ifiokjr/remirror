@@ -631,6 +631,7 @@ importers:
       '@remirror/extension-blockquote': 1.0.0-next.60
       '@remirror/extension-bold': 1.0.0-next.60
       '@remirror/extension-callout': 1.0.0-next.60
+      '@remirror/extension-caption': 0.0.0
       '@remirror/extension-code': 1.0.0-next.60
       '@remirror/extension-code-block': 1.0.0-next.60
       '@remirror/extension-codemirror5': 1.0.0-next.60
@@ -700,6 +701,7 @@ importers:
       '@remirror/extension-blockquote': link:../remirror__extension-blockquote
       '@remirror/extension-bold': link:../remirror__extension-bold
       '@remirror/extension-callout': link:../remirror__extension-callout
+      '@remirror/extension-caption': link:../remirror__extension-caption
       '@remirror/extension-code': link:../remirror__extension-code
       '@remirror/extension-code-block': link:../remirror__extension-code-block
       '@remirror/extension-codemirror5': link:../remirror__extension-codemirror5
@@ -1095,6 +1097,17 @@ importers:
       '@svgmoji/blob': 3.2.0
       svgmoji: 3.2.0
 
+  packages/remirror__extension-caption:
+    specifiers:
+      '@babel/runtime': ^7.13.10
+      '@remirror/core': 1.0.0-next.60
+      '@remirror/pm': 1.0.0-next.60
+    dependencies:
+      '@babel/runtime': 7.13.10
+      '@remirror/core': link:../remirror__core
+    devDependencies:
+      '@remirror/pm': link:../remirror__pm
+
   packages/remirror__extension-code:
     specifiers:
       '@babel/runtime': ^7.13.10
@@ -1378,6 +1391,7 @@ importers:
     specifiers:
       '@babel/runtime': ^7.13.10
       '@remirror/core': 1.0.0-next.60
+      '@remirror/extension-caption': 0.0.0
       '@remirror/messages': 0.0.0
       '@remirror/pm': 1.0.0-next.60
       '@remirror/theme': 1.0.0-next.60
@@ -1385,6 +1399,7 @@ importers:
     dependencies:
       '@babel/runtime': 7.14.6
       '@remirror/core': link:../remirror__core
+      '@remirror/extension-caption': link:../remirror__extension-caption
       '@remirror/messages': link:../remirror__messages
       '@remirror/theme': link:../remirror__theme
       prosemirror-resizable-view: link:../prosemirror-resizable-view

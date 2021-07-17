@@ -85,6 +85,7 @@
     "@remirror/extension-blockquote": "1.0.0-next.60",
     "@remirror/extension-bold": "1.0.0-next.60",
     "@remirror/extension-callout": "1.0.0-next.60",
+    "@remirror/extension-caption": "0.0.0",
     "@remirror/extension-code": "1.0.0-next.60",
     "@remirror/extension-code-block": "1.0.0-next.60",
     "@remirror/extension-codemirror5": "1.0.0-next.60",

@@ -150,6 +150,15 @@
       "path": "packages/remirror__extension-callout/src"
     },
     {
+      "path": "packages/remirror__extension-caption/__stories__"
+    },
+    {
+      "path": "packages/remirror__extension-caption/__tests__"
+    },
+    {
+      "path": "packages/remirror__extension-caption/src"
+    },
+    {
       "path": "packages/remirror__extension-code-block/__tests__"
     },
     {

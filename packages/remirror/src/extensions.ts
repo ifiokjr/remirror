@@ -4,6 +4,7 @@ export * from '@remirror/extension-bidi';
 export * from '@remirror/extension-blockquote';
 export * from '@remirror/extension-bold';
 export * from '@remirror/extension-callout';
+export * from '@remirror/extension-caption';
 export * from '@remirror/extension-code';
 export * from '@remirror/extension-code-block';
 export * from '@remirror/extension-codemirror5';

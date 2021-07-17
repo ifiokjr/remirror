@@ -50,6 +50,9 @@
       "path": "../../remirror__extension-callout/src"
     },
     {
+      "path": "../../remirror__extension-caption/src"
+    },
+    {
       "path": "../../remirror__extension-code/src"
     },
     {

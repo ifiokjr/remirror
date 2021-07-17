@@ -713,6 +713,25 @@ export const extensionCalloutStyledCss: ReturnType<typeof css> = css`
   }
 `;
 
+export const extensionCaptionStyledCss: ReturnType<typeof css> = css`
+  /**
+ * Styles extracted from: packages/remirror__theme/src/extension-caption-theme.ts
+ */
+  .remirror-editor figure {
+    margin: 1em;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .remirror-editor figure > *:first-child {
+    display: block;
+  }
+  .remirror-editor figure > figcaption {
+    background: var(--rmr-color-shadow-3);
+    padding: 0.25rem 1rem;
+  }
+`;
+
 export const extensionCodeBlockStyledCss: ReturnType<typeof css> = css`
   /**
  * Styles extracted from: packages/remirror__theme/src/extension-code-block-theme.ts
@@ -4485,6 +4504,7 @@ export const allStyledCss: ReturnType<typeof css> = css`
   ${coreStyledCss}
   ${extensionBlockquoteStyledCss}
   ${extensionCalloutStyledCss}
+  ${extensionCaptionStyledCss}
   ${extensionCodeBlockStyledCss}
   ${extensionEmojiStyledCss}
   ${extensionGapCursorStyledCss}

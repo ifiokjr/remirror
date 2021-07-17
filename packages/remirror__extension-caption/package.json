@@ -1,0 +1,54 @@
+{
+  "name": "@remirror/extension-caption",
+  "version": "0.0.0",
+  "private": true,
+  "description": "An extension to annotate content with a caption",
+  "keywords": [
+    "remirror",
+    "extension"
+  ],
+  "homepage": "https://github.com/remirror/remirror/tree/HEAD/remirror__extension-caption/extension-caption",
+  "repository": "https://github.com/remirror/remirror/tree/HEAD/packages/remirror__extension-caption",
+  "license": "MIT",
+  "contributors": [
+    "Will Hawker <w.hawker@hotmail.co.uk>"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "import": "./dist/remirror-extension-caption.esm.js",
+      "require": "./dist/remirror-extension-caption.cjs.js",
+      "browser": "./dist/remirror-extension-caption.browser.esm.js",
+      "types": "./dist/remirror-extension-caption.cjs.d.ts",
+      "default": "./dist/remirror-extension-caption.esm.js"
+    },
+    "./package.json": "./package.json",
+    "./types/*": "./dist/declarations/src/*.d.ts"
+  },
+  "main": "dist/remirror-extension-caption.cjs.js",
+  "module": "dist/remirror-extension-caption.esm.js",
+  "browser": {
+    "./dist/remirror-extension-caption.cjs.js": "./dist/remirror-extension-caption.browser.cjs.js",
+    "./dist/remirror-extension-caption.esm.js": "./dist/remirror-extension-caption.browser.esm.js"
+  },
+  "types": "dist/remirror-extension-caption.cjs.d.ts",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@babel/runtime": "^7.13.10",
+    "@remirror/core": "1.0.0-next.60"
+  },
+  "devDependencies": {
+    "@remirror/pm": "1.0.0-next.60"
+  },
+  "peerDependencies": {
+    "@remirror/pm": "1.0.0-next.60"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "@remirror": {
+    "sizeLimit": "5 KB"
+  }
+}
