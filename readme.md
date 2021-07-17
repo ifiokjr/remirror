@@ -216,6 +216,10 @@ const Editor = () => {
 
 <br />
 
+### Contributor over time
+
+[![Contributor over time](https://contributor-graph-api.apiseven.com/contributors-svg?chart=contributorOverTime&repo=remirror/remirror)](https://www.apiseven.com/en/contributor-graph?chart=contributorOverTime&repo=remirror/remirror)
+
 ## Contributing
 
 Please read our [contribution guide] for details on our code of conduct, and the process for submitting pull requests. It also outlines the project structure so you can find help when navigating your way around the codebase.
