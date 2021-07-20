@@ -1,0 +1,43 @@
+{
+	"__AUTO_GENERATED__": [
+		"To update the configuration edit the following field.",
+		"`package.json > @remirror > tsconfigs > 'src'`",
+		"",
+		"Then run: `pnpm -w generate:ts`"
+	],
+	"extends": "../../../support/tsconfig.base.json",
+	"compilerOptions": {
+		"types": [
+			"node",
+			"jest"
+		],
+		"declaration": true,
+		"noEmit": false,
+		"composite": true,
+		"emitDeclarationOnly": true,
+		"outDir": "../dist-types"
+	},
+	"include": [
+		"./"
+	],
+	"references": [
+		{
+			"path": "../../remirror__core-constants/src"
+		},
+		{
+			"path": "../../remirror__core-helpers/src"
+		},
+		{
+			"path": "../../remirror__core-types/src"
+		},
+		{
+			"path": "../../remirror__core-utils/src"
+		},
+		{
+			"path": "../../remirror__pm/src"
+		},
+		{
+			"path": "../../test-keyboard/src"
+		}
+	]
+}
