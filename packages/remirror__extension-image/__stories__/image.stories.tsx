@@ -30,7 +30,8 @@ export const Resizable: React.FC = () => {
   const { manager, state, onChange } = useRemirror({
     extensions: resizableExtensions,
     content:
-      '<p>You can see a resizable image below. Move you mouse over the image and drag the resizing handler to resize it.</p><img src="https://dummyimage.com/200x80/479e0c/fafafa">',
+      '<p>You can see a resizable image below. Move you mouse over the image and drag the resizing handler to resize it.</p>' +
+      '<p style="display:flex; align-items: center; justify-content: center;"><img src="https://dummyimage.com/200x80/479e0c/fafafa"></div>',
     stringHandler: htmlToProsemirrorNode,
   });
 

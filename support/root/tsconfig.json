@@ -195,6 +195,9 @@
       "path": "packages/remirror__extension-drop-cursor/src"
     },
     {
+      "path": "packages/remirror__extension-embed/__stories__"
+    },
+    {
       "path": "packages/remirror__extension-embed/__tests__"
     },
     {

@@ -40,6 +40,7 @@
     "@remirror/core": "^1.0.1",
     "@remirror/messages": "^1.0.1",
     "@types/querystringify": "^2.0.0",
+    "prosemirror-resizable-view": "^0.1.0",
     "querystringify": "^2.2.0"
   },
   "devDependencies": {
