@@ -1,0 +1,56 @@
+{
+  "__AUTO_GENERATED__": [
+    "To update the configuration edit the following field.",
+    "`package.json > @remirror > tsconfigs > '__stories__'`",
+    "",
+    "Then run: `pnpm -w generate:ts`"
+  ],
+  "extends": "../../../support/tsconfig.base.json",
+  "compilerOptions": {
+    "types": [],
+    "declaration": false,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "importsNotUsedAsValues": "remove",
+    "paths": {
+      "react": [
+        "../../../node_modules/.pnpm/@types+react@17.0.14/node_modules/@types/react/index.d.ts"
+      ],
+      "react/jsx-dev-runtime": [
+        "../../../node_modules/.pnpm/@types+react@17.0.14/node_modules/@types/react/jsx-dev-runtime.d.ts"
+      ],
+      "react/jsx-runtime": [
+        "../../../node_modules/.pnpm/@types+react@17.0.14/node_modules/@types/react/jsx-runtime.d.ts"
+      ],
+      "react-dom": [
+        "../../../node_modules/.pnpm/@types+react-dom@17.0.9/node_modules/@types/react-dom/index.d.ts"
+      ],
+      "reakit": [
+        "../../../node_modules/.pnpm/reakit@1.3.8_react-dom@17.0.2+react@17.0.2/node_modules/reakit/ts/index.d.ts"
+      ],
+      "@remirror/react": ["../../remirror__react/src/index.ts"],
+      "@storybook/react": [
+        "../../../node_modules/.pnpm/@storybook+react@6.3.4_dfad392d5450b8683a621f3ec486af19/node_modules/@storybook/react/types-6-0.d.ts"
+      ],
+      "@remirror/dev": ["../../remirror__dev/src/index.ts"]
+    }
+  },
+  "include": ["./"],
+  "references": [
+    {
+      "path": "../../testing/src"
+    },
+    {
+      "path": "../../remirror/src"
+    },
+    {
+      "path": "../../remirror__core/src"
+    },
+    {
+      "path": "../../remirror__messages/src"
+    },
+    {
+      "path": "../../prosemirror-resizable-view/src"
+    }
+  ]
+}
