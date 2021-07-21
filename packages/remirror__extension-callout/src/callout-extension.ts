@@ -2,6 +2,7 @@ import {
   ApplySchemaAttributes,
   command,
   CommandFunction,
+  EditorView,
   extension,
   ExtensionTag,
   findNodeAtSelection,
@@ -22,7 +23,6 @@ import {
 } from '@remirror/core';
 import { Fragment, Slice } from '@remirror/pm/model';
 import { TextSelection } from '@remirror/pm/state';
-import { EditorView } from '@remirror/pm/view';
 import { ExtensionCalloutTheme } from '@remirror/theme';
 
 import type { CalloutAttributes, CalloutOptions } from './callout-types';

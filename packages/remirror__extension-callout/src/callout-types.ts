@@ -1,5 +1,10 @@
-import type { LiteralUnion, ProsemirrorAttributes, ProsemirrorNode, Static } from '@remirror/core';
-import { EditorView } from '@remirror/pm/view';
+import type {
+  EditorView,
+  LiteralUnion,
+  ProsemirrorAttributes,
+  ProsemirrorNode,
+  Static,
+} from '@remirror/core';
 
 /**
  * Options available to the [[`CalloutExtension`]].
