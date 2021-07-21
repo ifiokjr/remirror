@@ -45,17 +45,7 @@
 
 <br />
 
-## Motivation
-
-`remirror` was started as a personal challenge. Would it be possible to build an editor that combined great performance with ease of use? It was also important to give users of all frameworks, the ability to build an editor by picking and choosing their desired building blocks.
-
-In order to meet these goals, [ProseMirror][prosemirror] was picked as the best choice for the core editor layer. The second decision was to base the structure of the editor on blocks of functionality called `Extensions`. Each extension would be designed to fulfil a specific purpose in the editor. Due to this structure, users would be able to craft a fully custom implementation.
-
-In the upcoming version of `remirror`, some of these initial goals are starting to be met. Every single part of the editor is controlled by extensions. For example, the core (`Schema`) is managed by a [built-in extension](https://github.com/remirror/remirror/blob/HEAD/packages/remirror__core/src/builtins/schema-extension.ts). This means that the editor you choose to build is completely customizable.
-
-The API has also improved a lot. Multi-framework support is being added in the future. Currently the focus is on `React` and the `DOM`.
-
-There are also a host of drop in components and hooks being developed. To get started with the simplest possible editor the following will suffice.
+## Introduction
 
 ```tsx
 import React from 'react';
@@ -76,25 +66,21 @@ const Editor = () => {
 };
 ```
 
-With this small snippet your editor now supports some complex UI Functionality. And it's all customisable with ordinary `css`. If you prefer `CSS-in-JS` the styles are also available via `emotion` and `styled-components`.
-
-There's so much more to come and I'm glad you're taking a look. I hope `remirror` proves to be everything you need for your next text editor project.
+With this code snippet your editor now supports basic editing functionality.
 
 <br />
 
-## Status
-
-This is the `beta` branch of the `remirror` which will be fully released in the coming weeks.
-
-In the meantime, you can install the beta version via the following command.
+## Installation
 
 ```bash
-yarn add remirror@pr706 @remirror/react@pr706 # Yarn
+yarn add remirror @remirror/react # Yarn
 
-npm install remirror@pr706 @remirror/react@pr706 # npm
+npm install remirror @remirror/react # npm
 
-pnpm add remirror@pr706 @remirror/react@pr706 # pnpm
+pnpm add remirror @remirror/react # pnpm
 ```
+
+If you run into any issues we recommend any of the following:
 
 - Open an issue in our [github repo](https://github.com/remirror/remirror/issues).
 - [Join our discord server](https://remirror.io/chat) and discuss the problem with our community.
